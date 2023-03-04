@@ -1,0 +1,212 @@
+﻿using UnityEngine.UI;
+using TMPro;
+using UnityEngine;
+using System.Collections.Generic;
+
+public class Soal : MonoBehaviour
+{
+    private string[] kunciSoal;
+    public static GameObject jawaban;
+    public static int skor, batas1, batas2, batas3, batas4, batas5, countMunculSoal, countBenar;
+    public GameObject soalBox, balloon, salah;
+    public GameObject posisiA, posisiB, posisiC, posisiD, pccA, pccB, pccC, pccD;
+    public Animator animator, balon;
+    public TMP_Text soalText, aText, bText, cText, dText;
+    public Text scoreText;
+    private GameObject pemain;
+    private static GameObject dadu;
+    private float moveSpeed = 1f;
+    private GameObject data;
+
+    delegate void VoidFunction();
+    public void RandomPos()
+    {
+        List<VoidFunction> functionList = new List<VoidFunction>();
+        functionList.Add(Function1);
+        functionList.Add(Function2);
+        functionList.Add(Function3);
+        functionList.Add(Function4);
+        functionList.Add(Function5);
+        int index = UnityEngine.Random.Range(0, functionList.Count);
+        functionList[index]();
+    }
+
+    void Function1()
+    {
+        posisiC.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
+        posisiA.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
+        posisiD.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
+        posisiB.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
+        pccC.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
+        pccA.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
+        pccD.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
+        pccB.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+    }
+
+    void Function2()
+    {
+        posisiB.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
+        posisiC.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
+        posisiA.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
+        posisiD.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
+        pccB.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
+        pccC.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
+        pccA.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
+        pccD.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+    }
+
+    void Function3()
+    {
+        posisiD.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
+        posisiB.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
+        posisiA.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
+        posisiC.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
+        pccD.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
+        pccB.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
+        pccA.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
+        pccC.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+    }
+
+    void Function4()
+    {
+        posisiD.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
+        posisiC.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
+        posisiA.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
+        posisiB.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
+        pccD.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
+        pccC.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
+        pccA.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
+        pccB.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+    }
+
+    void Function5()
+    {
+        posisiA.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
+        posisiD.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
+        posisiB.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
+        posisiC.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
+        pccA.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
+        pccD.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
+        pccB.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
+        pccC.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+    }
+    
+    private void Start()
+    {
+        List<VoidFunction> functionList = new List<VoidFunction>();
+        balloon.SetActive(false);
+        skor = 95;
+        countMunculSoal = 0;
+        countBenar = 0;
+        batas1 = 87;
+        batas2 = 80;
+        batas3 = 76;
+        batas4 = 70;
+        batas5 = 66;      
+        pemain = GameObject.Find("Pemain");
+        jawaban = GameObject.Find("GameObject");
+        dadu = GameObject.Find("Dadu");
+        data = GameObject.Find("Kontrol");
+        data.GetComponent<LoadCSV>().LoadItemData();
+        kunciSoal = new string[data.GetComponent<LoadCSV>().itemDatabase.Count];
+        for (var i = 0; i < data.GetComponent<LoadCSV>().itemDatabase.Count; i++)
+        {
+            string kunci = data.GetComponent<LoadCSV>().itemDatabase[i].kunci;
+            kunciSoal[i] = kunci;            
+        }
+    }
+
+    private void Update()
+    {
+        scoreText.text = "Skor = " + skor.ToString();
+    }
+    public void MoveGameObject()
+    {
+        dadu.transform.position = new Vector3(-6.42f, -9f, 0f);
+    }
+    public void ReturnGameObject()
+    {
+        dadu.transform.position = new Vector3(-6.42f, -3.1f, 0f);
+    }
+    public void munculSoal(string teks, string a, string b, string c, string d)
+    {
+        countMunculSoal += 1;
+        dadu.GetComponent<Dice>().coroutineAllowed = false;
+        RandomPos();
+        MoveGameObject();
+        soalBox.SetActive(true);
+        animator.SetTrigger("muncul");
+        soalText.text = teks;
+        aText.text = a;
+        bText.text = b;
+        cText.text = c;
+        dText.text = d;
+    }
+
+    public void prosesKoreksiular(string kunci, int a, int b, int c)
+    {
+        if (kunci != kunciSoal[a] && Kontrol.penentu == b)
+        {
+            salah.GetComponent<Salah>().PlayMusic();
+            dadu.GetComponent<Dice>().coroutineAllowed = true;
+            pemain.GetComponent<Jalan>().bolehJalan = true; 
+            pemain.GetComponent<Jalan>().transform.position = Vector2.MoveTowards(pemain.GetComponent<Jalan>().transform.position,
+            pemain.GetComponent<Jalan>().titik[11].transform.position,
+            moveSpeed * Time.deltaTime);
+            pemain.GetComponent<Jalan>().titikIndex = c;
+            pemain.GetComponent<Jalan>().titikIndex += 1;
+            ReturnGameObject();            
+        }
+        else if (kunci == kunciSoal[a] && Kontrol.penentu == b)
+        {
+            countBenar += 1;
+            GetComponent<AudioSource>().Play();
+            dadu.GetComponent<Dice>().coroutineAllowed = true;
+            balloon.SetActive(true);
+            balon.SetTrigger("balon");
+            skor += 5;
+            ReturnGameObject();
+        }
+    }
+
+    public void prosesKoreksitangga(string kunci, int a, int b, int c)
+    {
+        if(kunci == kunciSoal[a] && Kontrol.penentu == b)
+        {
+            countBenar += 1;
+            GetComponent<AudioSource>().Play();
+            dadu.GetComponent<Dice>().coroutineAllowed = true;
+            pemain.GetComponent<Jalan>().bolehJalan = true; 
+            balloon.SetActive(true);
+            balon.SetTrigger("balon");
+            pemain.GetComponent<Jalan>().transform.position = Vector2.MoveTowards(pemain.GetComponent<Jalan>().transform.position,
+            pemain.GetComponent<Jalan>().titik[c].transform.position,
+            moveSpeed * Time.deltaTime);
+            pemain.GetComponent<Jalan>().titikIndex = c;
+            pemain.GetComponent<Jalan>().titikIndex += 1;
+            skor += 5;
+            ReturnGameObject();            
+        }
+        else if(kunci != kunciSoal[a] && Kontrol.penentu == b)
+        {
+            salah.GetComponent<Salah>().PlayMusic();
+            ReturnGameObject();
+        }
+    }
+
+    public void koreksiSoal(string kunci)
+    {
+        prosesKoreksitangga(kunci, 0,7,12);
+        prosesKoreksitangga(kunci, 1,18,23);
+        prosesKoreksiular(kunci, 2,22,11);
+        prosesKoreksiular(kunci, 3,16,13);
+        prosesKoreksiular(kunci, 4,8,0);
+        prosesKoreksitangga(kunci, 5,1,9);
+        prosesKoreksitangga(kunci, 6,10,19);
+        prosesKoreksiular(kunci, 7,14,3);
+        prosesKoreksiular(kunci, 8,15,5);
+        prosesKoreksitangga(kunci, 9,2,6);
+        pemain.GetComponent<Jalan>().bolehJalan = false;
+        Kontrol.posisiPemain = pemain.GetComponent<Jalan>().titikIndex - 1;
+    }
+}
