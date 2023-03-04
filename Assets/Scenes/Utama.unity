@@ -3516,6 +3516,7 @@ MonoBehaviour:
   hore: {fileID: 8300000, guid: a2d67187751113f41902ed2331e45d53, type: 3}
   bolehJalan: 0
   bolehPlay: 0
+  lagiSoal: 1
   menangText: {fileID: 481610479}
   boxMenang: {fileID: 635894920}
   skor: {fileID: 1817214288}

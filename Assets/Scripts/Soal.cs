@@ -147,15 +147,28 @@ public class Soal : MonoBehaviour
     {
         if (kunci != kunciSoal[a] && Kontrol.penentu == b)
         {
+            Kontrol.lemparDadu = 1;
+            // pemain.GetComponent<Jalan>().bolehJalan = true;
             salah.GetComponent<Salah>().PlayMusic();
-            dadu.GetComponent<Dice>().coroutineAllowed = true;
-            pemain.GetComponent<Jalan>().bolehJalan = true; 
-            pemain.GetComponent<Jalan>().transform.position = Vector2.MoveTowards(pemain.GetComponent<Jalan>().transform.position,
-            pemain.GetComponent<Jalan>().titik[11].transform.position,
-            moveSpeed * Time.deltaTime);
+            dadu.GetComponent<Dice>().coroutineAllowed = true; 
+            if(c != 0)
+            {
+                pemain.GetComponent<Jalan>().transform.position = Vector2.MoveTowards(
+                pemain.GetComponent<Jalan>().transform.position,
+                pemain.GetComponent<Jalan>().titik[c-1].transform.position,
+                moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                pemain.GetComponent<Jalan>().transform.position = Vector2.MoveTowards(
+                pemain.GetComponent<Jalan>().transform.position,
+                pemain.GetComponent<Jalan>().titik[0].transform.position,
+                moveSpeed * Time.deltaTime);
+            }   
             pemain.GetComponent<Jalan>().titikIndex = c;
-            pemain.GetComponent<Jalan>().titikIndex += 1;
             ReturnGameObject();            
+            if (pemain.GetComponent<Jalan>().transform.position == pemain.GetComponent<Jalan>().titik[c].transform.position)
+                pemain.GetComponent<Jalan>().bolehJalan = false;            
         }
         else if (kunci == kunciSoal[a] && Kontrol.penentu == b)
         {
@@ -166,6 +179,7 @@ public class Soal : MonoBehaviour
             balon.SetTrigger("balon");
             skor += 5;
             ReturnGameObject();
+            pemain.GetComponent<Jalan>().bolehJalan = false;
         }
     }
 
@@ -174,23 +188,37 @@ public class Soal : MonoBehaviour
         if(kunci == kunciSoal[a] && Kontrol.penentu == b)
         {
             countBenar += 1;
+            // pemain.GetComponent<Jalan>().bolehJalan = true;
+            Kontrol.lemparDadu = 1;
             GetComponent<AudioSource>().Play();
-            dadu.GetComponent<Dice>().coroutineAllowed = true;
-            pemain.GetComponent<Jalan>().bolehJalan = true; 
+            dadu.GetComponent<Dice>().coroutineAllowed = true; 
             balloon.SetActive(true);
             balon.SetTrigger("balon");
-            pemain.GetComponent<Jalan>().transform.position = Vector2.MoveTowards(pemain.GetComponent<Jalan>().transform.position,
-            pemain.GetComponent<Jalan>().titik[c].transform.position,
-            moveSpeed * Time.deltaTime);
+            if(c != 0)
+            {
+                pemain.GetComponent<Jalan>().transform.position = Vector2.MoveTowards(
+                pemain.GetComponent<Jalan>().transform.position,
+                pemain.GetComponent<Jalan>().titik[c-1].transform.position,
+                moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                pemain.GetComponent<Jalan>().transform.position = Vector2.MoveTowards(
+                pemain.GetComponent<Jalan>().transform.position,
+                pemain.GetComponent<Jalan>().titik[0].transform.position,
+                moveSpeed * Time.deltaTime);
+            }            
             pemain.GetComponent<Jalan>().titikIndex = c;
-            pemain.GetComponent<Jalan>().titikIndex += 1;
             skor += 5;
             ReturnGameObject();            
+            if (pemain.GetComponent<Jalan>().transform.position == pemain.GetComponent<Jalan>().titik[c].transform.position)
+                pemain.GetComponent<Jalan>().bolehJalan = false;            
         }
         else if(kunci != kunciSoal[a] && Kontrol.penentu == b)
         {
             salah.GetComponent<Salah>().PlayMusic();
             ReturnGameObject();
+            pemain.GetComponent<Jalan>().bolehJalan = false;
         }
     }
 
@@ -206,7 +234,6 @@ public class Soal : MonoBehaviour
         prosesKoreksiular(kunci, 7,14,3);
         prosesKoreksiular(kunci, 8,15,5);
         prosesKoreksitangga(kunci, 9,2,6);
-        pemain.GetComponent<Jalan>().bolehJalan = false;
         Kontrol.posisiPemain = pemain.GetComponent<Jalan>().titikIndex - 1;
     }
 }

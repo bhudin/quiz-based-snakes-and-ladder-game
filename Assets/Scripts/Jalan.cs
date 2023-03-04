@@ -17,7 +17,7 @@ public class Jalan : MonoBehaviour
     public int titikIndex = 0;
     public int selisih_update;
     public AudioClip hore;
-    public bool bolehJalan = false, bolehPlay = false;
+    public bool bolehJalan = false, bolehPlay = false, lagiSoal = true;
     public static float time_fixed;
     public TMP_Text menangText;
     public GameObject boxMenang, skor, restart, close, kartu, help, waktu, up;
@@ -34,7 +34,6 @@ public class Jalan : MonoBehaviour
     }
     private void Update()
     {
-        //Debug.Log(titikIndex);
         enabled = true;
         selisih_update = 24 - titikIndex;
         if (bolehJalan)
@@ -89,15 +88,15 @@ public class Jalan : MonoBehaviour
             }
         }
         
-        else if (selisih_update - Kontrol.lemparDadu < 0)
-        {
-            transform.position = Vector2.MoveTowards(transform.position,
-            titik[24-selisih_update].transform.position,
-            moveSpeed * Time.deltaTime);
-            if (transform.position == titik[24 - selisih_update].transform.position)
-            {
-                titikIndex -= 1;
-            }
-        }
+        // if (selisih_update - Kontrol.lemparDadu < 0)
+        // {
+        //     transform.position = Vector2.MoveTowards(transform.position,
+        //     titik[24-selisih_update].transform.position,
+        //     moveSpeed * Time.deltaTime);
+        //     if (transform.position == titik[24 - selisih_update].transform.position)
+        //     {
+        //         titikIndex -= 1;
+        //     }
+        // }
     }
 }
