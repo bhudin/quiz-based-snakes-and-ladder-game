@@ -43,7 +43,6 @@ public class Kontrol : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(lemparDadu);
         if(pemain.GetComponent<Jalan>().titikIndex-1 == posisiPemain + lemparDadu) {
             if(pemain.GetComponent<Jalan>().bolehJalan)
                 pemain.GetComponent<Jalan>().bolehJalan = false; 
