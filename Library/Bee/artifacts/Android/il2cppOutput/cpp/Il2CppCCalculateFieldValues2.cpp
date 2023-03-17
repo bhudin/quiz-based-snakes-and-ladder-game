@@ -3491,14 +3491,14 @@ struct LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60  : public RuntimeOb
 	GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* ___windows_3;
 };
 
-// Jalan/<Nyalakan>d__20
-struct U3CNyalakanU3Ed__20_tB64BEA77521E8DE55278E7D8E7FECDF8F9E707FA  : public RuntimeObject
+// Jalan/<Nyalakan>d__21
+struct U3CNyalakanU3Ed__21_t2DA3BEEAF5FE520E8ADABCC794AE34B37BEE38D2  : public RuntimeObject
 {
-	// System.Int32 Jalan/<Nyalakan>d__20::<>1__state
+	// System.Int32 Jalan/<Nyalakan>d__21::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object Jalan/<Nyalakan>d__20::<>2__current
+	// System.Object Jalan/<Nyalakan>d__21::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// Jalan Jalan/<Nyalakan>d__20::<>4__this
+	// Jalan Jalan/<Nyalakan>d__21::<>4__this
 	Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094* ___U3CU3E4__this_2;
 };
 
@@ -12163,32 +12163,34 @@ struct Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094  : public MonoBehaviour_t
 	bool ___bolehJalan_9;
 	// System.Boolean Jalan::bolehPlay
 	bool ___bolehPlay_10;
+	// System.Boolean Jalan::lagiSoal
+	bool ___lagiSoal_11;
 	// TMPro.TMP_Text Jalan::menangText
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___menangText_12;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___menangText_13;
 	// UnityEngine.GameObject Jalan::boxMenang
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___boxMenang_13;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___boxMenang_14;
 	// UnityEngine.GameObject Jalan::skor
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___skor_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___skor_15;
 	// UnityEngine.GameObject Jalan::restart
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___restart_15;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___restart_16;
 	// UnityEngine.GameObject Jalan::close
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___close_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___close_17;
 	// UnityEngine.GameObject Jalan::kartu
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kartu_17;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kartu_18;
 	// UnityEngine.GameObject Jalan::help
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___help_18;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___help_19;
 	// UnityEngine.GameObject Jalan::waktu
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___waktu_19;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___waktu_20;
 	// UnityEngine.GameObject Jalan::up
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___up_20;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___up_21;
 	// UnityEngine.AudioSource Jalan::bar
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___bar_21;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___bar_22;
 };
 
 struct Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094_StaticFields
 {
 	// System.Single Jalan::time_fixed
-	float ___time_fixed_11;
+	float ___time_fixed_12;
 };
 
 // Kartu
@@ -14565,10 +14567,10 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6771[7] =
 	static_cast<int32_t>(offsetof(Item_tFAF77888D49883A321EB596A7D93CB5615D37E95, ___id_0)),static_cast<int32_t>(offsetof(Item_tFAF77888D49883A321EB596A7D93CB5615D37E95, ___soal_1)),static_cast<int32_t>(offsetof(Item_tFAF77888D49883A321EB596A7D93CB5615D37E95, ___A_2)),static_cast<int32_t>(offsetof(Item_tFAF77888D49883A321EB596A7D93CB5615D37E95, ___B_3)),static_cast<int32_t>(offsetof(Item_tFAF77888D49883A321EB596A7D93CB5615D37E95, ___C_4)),static_cast<int32_t>(offsetof(Item_tFAF77888D49883A321EB596A7D93CB5615D37E95, ___D_5)),static_cast<int32_t>(offsetof(Item_tFAF77888D49883A321EB596A7D93CB5615D37E95, ___kunci_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6772[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CNyalakanU3Ed__20_tB64BEA77521E8DE55278E7D8E7FECDF8F9E707FA, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CNyalakanU3Ed__20_tB64BEA77521E8DE55278E7D8E7FECDF8F9E707FA, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CNyalakanU3Ed__20_tB64BEA77521E8DE55278E7D8E7FECDF8F9E707FA, ___U3CU3E4__this_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6773[18] = 
+	static_cast<int32_t>(offsetof(U3CNyalakanU3Ed__21_t2DA3BEEAF5FE520E8ADABCC794AE34B37BEE38D2, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CNyalakanU3Ed__21_t2DA3BEEAF5FE520E8ADABCC794AE34B37BEE38D2, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CNyalakanU3Ed__21_t2DA3BEEAF5FE520E8ADABCC794AE34B37BEE38D2, ___U3CU3E4__this_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6773[19] = 
 {
-	static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___titik_4)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___moveSpeed_5)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___titikIndex_6)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___selisih_update_7)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___hore_8)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___bolehJalan_9)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___bolehPlay_10)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094_StaticFields, ___time_fixed_11)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___menangText_12)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___boxMenang_13)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___skor_14)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___restart_15)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___close_16)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___kartu_17)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___help_18)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___waktu_19)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___up_20)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___bar_21)),};
+	static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___titik_4)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___moveSpeed_5)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___titikIndex_6)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___selisih_update_7)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___hore_8)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___bolehJalan_9)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___bolehPlay_10)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___lagiSoal_11)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094_StaticFields, ___time_fixed_12)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___menangText_13)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___boxMenang_14)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___skor_15)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___restart_16)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___close_17)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___kartu_18)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___help_19)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___waktu_20)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___up_21)),static_cast<int32_t>(offsetof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094, ___bar_22)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6774[5] = 
 {
 	static_cast<int32_t>(offsetof(U3CMunculkanKartuU3Ed__9_tFFD5428433E00686B118BA37C4055DC2481341C6, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CMunculkanKartuU3Ed__9_tFFD5428433E00686B118BA37C4055DC2481341C6, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CMunculkanKartuU3Ed__9_tFFD5428433E00686B118BA37C4055DC2481341C6, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CMunculkanKartuU3Ed__9_tFFD5428433E00686B118BA37C4055DC2481341C6, ___indekskartu_3)),static_cast<int32_t>(offsetof(U3CMunculkanKartuU3Ed__9_tFFD5428433E00686B118BA37C4055DC2481341C6, ___U3CfU3E5__2_4)),};

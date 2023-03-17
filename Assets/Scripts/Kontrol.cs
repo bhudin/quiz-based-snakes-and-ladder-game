@@ -48,9 +48,9 @@ public class Kontrol : MonoBehaviour
                 pemain.GetComponent<Jalan>().bolehJalan = false; 
         }
         time = Mathf.Round(Time.timeSinceLevelLoad);
-        waktuText.text = "Waktu = " + time.ToString();        
-        if (pemain.GetComponent<Jalan>().titikIndex >
-            posisiPemain + lemparDadu)
+        waktuText.text = "Waktu = " + time.ToString();
+                
+        if (pemain.GetComponent<Jalan>().titikIndex > posisiPemain + lemparDadu)
         {
             penentu = posisiPemain + lemparDadu;
             pemainLempardadu(7,masterSoal[0]);
@@ -66,7 +66,7 @@ public class Kontrol : MonoBehaviour
             // pemain.GetComponent<Jalan>().bolehJalan = false;
             posisiPemain = pemain.GetComponent<Jalan>().titikIndex - 1;
         }
-        if (pemain.GetComponent<Jalan>().titikIndex > 24)
+        if (pemain.GetComponent<Jalan>().titikIndex > Jalan.jumlahPetak)
         {
             enabled = false;
         }

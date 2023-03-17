@@ -13,6 +13,8 @@ public class Soal : MonoBehaviour
     public Animator animator, balon;
     public TMP_Text soalText, aText, bText, cText, dText;
     public Text scoreText;
+    private float x1Pos = -2.0f, x2Pos = 2.0f, y1Pos = -0.6f, y2Pos = -2.6f;
+    private float x1tPos = -190.0f, x2tPos = 170.0f, y1tPos = -67.0f, y2tPos = -215.0f;
     private GameObject pemain;
     private static GameObject dadu;
     private float moveSpeed = 1f;
@@ -33,62 +35,62 @@ public class Soal : MonoBehaviour
 
     void Function1()
     {
-        posisiC.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
-        posisiA.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
-        posisiD.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
-        posisiB.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
-        pccC.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
-        pccA.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
-        pccD.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
-        pccB.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+        posisiC.transform.localPosition = new Vector3(x1Pos, y1Pos, -0.35f);
+        posisiA.transform.localPosition = new Vector3(x2Pos, y1Pos, -0.35f);
+        posisiD.transform.localPosition = new Vector3(x1Pos, y2Pos, -0.35f);
+        posisiB.transform.localPosition = new Vector3(x2Pos, y2Pos, -0.35f);
+        pccC.transform.localPosition = new Vector3(x1tPos, y1tPos, -48.0f);
+        pccA.transform.localPosition = new Vector3(x2tPos, y1tPos, -48.0f);
+        pccD.transform.localPosition = new Vector3(x1tPos, y2tPos, -48.0f);
+        pccB.transform.localPosition = new Vector3(x2tPos, y2tPos, -48.0f);
     }
 
     void Function2()
     {
-        posisiB.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
-        posisiC.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
-        posisiA.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
-        posisiD.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
-        pccB.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
-        pccC.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
-        pccA.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
-        pccD.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+        posisiB.transform.localPosition = new Vector3(x1Pos, y1Pos, -0.35f);
+        posisiC.transform.localPosition = new Vector3(x2Pos, y1Pos, -0.35f);
+        posisiA.transform.localPosition = new Vector3(x1Pos, y2Pos, -0.35f);
+        posisiD.transform.localPosition = new Vector3(x2Pos, y2Pos, -0.35f);
+        pccB.transform.localPosition = new Vector3(x1tPos, y1tPos, -48.0f);
+        pccC.transform.localPosition = new Vector3(x2tPos, y1tPos, -48.0f);
+        pccA.transform.localPosition = new Vector3(x1tPos, y2tPos, -48.0f);
+        pccD.transform.localPosition = new Vector3(x2tPos, y2tPos, -48.0f);
     }
 
     void Function3()
     {
-        posisiD.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
-        posisiB.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
-        posisiA.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
-        posisiC.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
-        pccD.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
-        pccB.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
-        pccA.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
-        pccC.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+        posisiD.transform.localPosition = new Vector3(x1Pos, y1Pos, -0.35f);
+        posisiB.transform.localPosition = new Vector3(x2Pos, y1Pos, -0.35f);
+        posisiA.transform.localPosition = new Vector3(x1Pos, y2Pos, -0.35f);
+        posisiC.transform.localPosition = new Vector3(x2Pos, y2Pos, -0.35f);
+        pccD.transform.localPosition = new Vector3(x1tPos, y1tPos, -48.0f);
+        pccB.transform.localPosition = new Vector3(x2tPos, y1tPos, -48.0f);
+        pccA.transform.localPosition = new Vector3(x1tPos, y2tPos, -48.0f);
+        pccC.transform.localPosition = new Vector3(x2tPos, y2tPos, -48.0f);
     }
 
     void Function4()
     {
-        posisiD.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
-        posisiC.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
-        posisiA.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
-        posisiB.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
-        pccD.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
-        pccC.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
-        pccA.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
-        pccB.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+        posisiD.transform.localPosition = new Vector3(x1Pos, y1Pos, -0.35f);
+        posisiC.transform.localPosition = new Vector3(x2Pos, y1Pos, -0.35f);
+        posisiA.transform.localPosition = new Vector3(x1Pos, y2Pos, -0.35f);
+        posisiB.transform.localPosition = new Vector3(x2Pos, y2Pos, -0.35f);
+        pccD.transform.localPosition = new Vector3(x1tPos, y1tPos, -48.0f);
+        pccC.transform.localPosition = new Vector3(x2tPos, y1tPos, -48.0f);
+        pccA.transform.localPosition = new Vector3(x1tPos, y2tPos, -48.0f);
+        pccB.transform.localPosition = new Vector3(x2tPos, y2tPos, -48.0f);
     }
 
     void Function5()
     {
-        posisiA.transform.localPosition = new Vector3(-2.0f, -0.6f, -0.35f);
-        posisiD.transform.localPosition = new Vector3(2.0f, -0.6f, -0.35f);
-        posisiB.transform.localPosition = new Vector3(-2.0f, -2.6f, -0.35f);
-        posisiC.transform.localPosition = new Vector3(2.0f, -2.6f, -0.35f);
-        pccA.transform.localPosition = new Vector3(-210.0f, -72.0f, -48.0f);
-        pccD.transform.localPosition = new Vector3(180.0f, -72.0f, -48.0f);
-        pccB.transform.localPosition = new Vector3(-210.0f, -240.0f, -48.0f);
-        pccC.transform.localPosition = new Vector3(180.0f, -240.0f, -48.0f);
+        posisiA.transform.localPosition = new Vector3(x1Pos, y1Pos, -0.35f);
+        posisiD.transform.localPosition = new Vector3(x2Pos, y1Pos, -0.35f);
+        posisiB.transform.localPosition = new Vector3(x1Pos, y2Pos, -0.35f);
+        posisiC.transform.localPosition = new Vector3(x2Pos, y2Pos, -0.35f);
+        pccA.transform.localPosition = new Vector3(x1tPos, y1tPos, -48.0f);
+        pccD.transform.localPosition = new Vector3(x2tPos, y1tPos, -48.0f);
+        pccB.transform.localPosition = new Vector3(x1tPos, y2tPos, -48.0f);
+        pccC.transform.localPosition = new Vector3(x2tPos, y2tPos, -48.0f);
     }
     
     private void Start()
@@ -150,7 +152,8 @@ public class Soal : MonoBehaviour
             Kontrol.lemparDadu = 1;
             // pemain.GetComponent<Jalan>().bolehJalan = true;
             salah.GetComponent<Salah>().PlayMusic();
-            dadu.GetComponent<Dice>().coroutineAllowed = true; 
+            dadu.GetComponent<Dice>().coroutineAllowed = true;
+            //soalBox.SetActive(false); 
             if(c != 0)
             {
                 pemain.GetComponent<Jalan>().transform.position = Vector2.MoveTowards(
@@ -175,6 +178,7 @@ public class Soal : MonoBehaviour
             countBenar += 1;
             GetComponent<AudioSource>().Play();
             dadu.GetComponent<Dice>().coroutineAllowed = true;
+            //soalBox.SetActive(false);
             balloon.SetActive(true);
             balon.SetTrigger("balon");
             skor += 5;
@@ -193,6 +197,7 @@ public class Soal : MonoBehaviour
             GetComponent<AudioSource>().Play();
             dadu.GetComponent<Dice>().coroutineAllowed = true; 
             balloon.SetActive(true);
+            //soalBox.SetActive(false);
             balon.SetTrigger("balon");
             if(c != 0)
             {
@@ -216,6 +221,7 @@ public class Soal : MonoBehaviour
         }
         else if(kunci != kunciSoal[a] && Kontrol.penentu == b)
         {
+            //soalBox.SetActive(false);
             salah.GetComponent<Salah>().PlayMusic();
             ReturnGameObject();
             pemain.GetComponent<Jalan>().bolehJalan = false;

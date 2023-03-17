@@ -5105,14 +5105,14 @@ struct U3CMouseDragOutsideRectU3Ed__194_t781B4CA947F9CF50ED6945C50544D71BC12FB69
 	InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* ___U3CU3E4__this_3;
 };
 
-// Jalan/<Nyalakan>d__20
-struct U3CNyalakanU3Ed__20_tB64BEA77521E8DE55278E7D8E7FECDF8F9E707FA  : public RuntimeObject
+// Jalan/<Nyalakan>d__21
+struct U3CNyalakanU3Ed__21_t2DA3BEEAF5FE520E8ADABCC794AE34B37BEE38D2  : public RuntimeObject
 {
-	// System.Int32 Jalan/<Nyalakan>d__20::<>1__state
+	// System.Int32 Jalan/<Nyalakan>d__21::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object Jalan/<Nyalakan>d__20::<>2__current
+	// System.Object Jalan/<Nyalakan>d__21::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// Jalan Jalan/<Nyalakan>d__20::<>4__this
+	// Jalan Jalan/<Nyalakan>d__21::<>4__this
 	Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094* ___U3CU3E4__this_2;
 };
 
@@ -18491,32 +18491,34 @@ struct Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094  : public MonoBehaviour_t
 	bool ___bolehJalan_9;
 	// System.Boolean Jalan::bolehPlay
 	bool ___bolehPlay_10;
+	// System.Boolean Jalan::lagiSoal
+	bool ___lagiSoal_11;
 	// TMPro.TMP_Text Jalan::menangText
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___menangText_12;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___menangText_13;
 	// UnityEngine.GameObject Jalan::boxMenang
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___boxMenang_13;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___boxMenang_14;
 	// UnityEngine.GameObject Jalan::skor
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___skor_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___skor_15;
 	// UnityEngine.GameObject Jalan::restart
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___restart_15;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___restart_16;
 	// UnityEngine.GameObject Jalan::close
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___close_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___close_17;
 	// UnityEngine.GameObject Jalan::kartu
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kartu_17;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___kartu_18;
 	// UnityEngine.GameObject Jalan::help
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___help_18;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___help_19;
 	// UnityEngine.GameObject Jalan::waktu
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___waktu_19;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___waktu_20;
 	// UnityEngine.GameObject Jalan::up
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___up_20;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___up_21;
 	// UnityEngine.AudioSource Jalan::bar
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___bar_21;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___bar_22;
 };
 
 struct Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094_StaticFields
 {
 	// System.Single Jalan::time_fixed
-	float ___time_fixed_11;
+	float ___time_fixed_12;
 };
 
 // Kartu
@@ -22481,7 +22483,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize6770 = { sizeof(help_tF6EE75
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6771;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6771 = { sizeof(Item_tFAF77888D49883A321EB596A7D93CB5615D37E95), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6772;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6772 = { sizeof(U3CNyalakanU3Ed__20_tB64BEA77521E8DE55278E7D8E7FECDF8F9E707FA), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6772 = { sizeof(U3CNyalakanU3Ed__21_t2DA3BEEAF5FE520E8ADABCC794AE34B37BEE38D2), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6773;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6773 = { sizeof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094), -1, sizeof(Jalan_tE4A1D2BD21E708FF8082365A5DAC697AECC5F094_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6774;

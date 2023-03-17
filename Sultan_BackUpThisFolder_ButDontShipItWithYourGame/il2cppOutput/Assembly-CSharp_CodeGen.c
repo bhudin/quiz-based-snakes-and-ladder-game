@@ -96,18 +96,18 @@ extern void Jalan_Nyalakan_m567E933988349D3E44AEA98C709556DC88C1F39F (void);
 extern void Jalan_Gerak_m8A55891E8F27D021A56014B01EB178736F67A5FB (void);
 // 0x0000002A System.Void Jalan::.ctor()
 extern void Jalan__ctor_m5A0FAE5251919995421899F6BCF28A18DFD8051B (void);
-// 0x0000002B System.Void Jalan/<Nyalakan>d__20::.ctor(System.Int32)
-extern void U3CNyalakanU3Ed__20__ctor_mA4C32E49E45077DF647215D43B7F672CAAD45BA7 (void);
-// 0x0000002C System.Void Jalan/<Nyalakan>d__20::System.IDisposable.Dispose()
-extern void U3CNyalakanU3Ed__20_System_IDisposable_Dispose_mDCA627F5D5E5C6AFE4861696D215C2018B59417A (void);
-// 0x0000002D System.Boolean Jalan/<Nyalakan>d__20::MoveNext()
-extern void U3CNyalakanU3Ed__20_MoveNext_m2C0CBB86DC4CBAF221DE43C682F6B64BA9857376 (void);
-// 0x0000002E System.Object Jalan/<Nyalakan>d__20::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CNyalakanU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5627DDA2A2674165DA959938AE3418DA77C7E4B6 (void);
-// 0x0000002F System.Void Jalan/<Nyalakan>d__20::System.Collections.IEnumerator.Reset()
-extern void U3CNyalakanU3Ed__20_System_Collections_IEnumerator_Reset_m9AE5C3653A11EA70EF584161AE6BE7DFB4BA8781 (void);
-// 0x00000030 System.Object Jalan/<Nyalakan>d__20::System.Collections.IEnumerator.get_Current()
-extern void U3CNyalakanU3Ed__20_System_Collections_IEnumerator_get_Current_m02D9C25A7E744F667968E1E3A93C5F13934938DF (void);
+// 0x0000002B System.Void Jalan/<Nyalakan>d__21::.ctor(System.Int32)
+extern void U3CNyalakanU3Ed__21__ctor_m598E14B05CD5858BF2F06B8FD4E46F3B38D9955F (void);
+// 0x0000002C System.Void Jalan/<Nyalakan>d__21::System.IDisposable.Dispose()
+extern void U3CNyalakanU3Ed__21_System_IDisposable_Dispose_mDC848DC998833578497CC113A21DE5A155F24EAC (void);
+// 0x0000002D System.Boolean Jalan/<Nyalakan>d__21::MoveNext()
+extern void U3CNyalakanU3Ed__21_MoveNext_m22DAAA4D6778298F220BD004AD92CB4119D223F5 (void);
+// 0x0000002E System.Object Jalan/<Nyalakan>d__21::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CNyalakanU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5DCB95CF6F07661B81947D7B1388FC4AD81350B4 (void);
+// 0x0000002F System.Void Jalan/<Nyalakan>d__21::System.Collections.IEnumerator.Reset()
+extern void U3CNyalakanU3Ed__21_System_Collections_IEnumerator_Reset_mED94865BBF351C75023B6453C6D19031012A5F0F (void);
+// 0x00000030 System.Object Jalan/<Nyalakan>d__21::System.Collections.IEnumerator.get_Current()
+extern void U3CNyalakanU3Ed__21_System_Collections_IEnumerator_get_Current_mE379FCF6DE78FF6B7D8E3B63933EE702DD901E3B (void);
 // 0x00000031 System.Void Kartu::Start()
 extern void Kartu_Start_m9986FEF65FD67C6DD7073294881EED380DC5956E (void);
 // 0x00000032 System.Void Kartu::OnMouseDown()
@@ -318,12 +318,12 @@ static Il2CppMethodPointer s_methodPointers[131] =
 	Jalan_Nyalakan_m567E933988349D3E44AEA98C709556DC88C1F39F,
 	Jalan_Gerak_m8A55891E8F27D021A56014B01EB178736F67A5FB,
 	Jalan__ctor_m5A0FAE5251919995421899F6BCF28A18DFD8051B,
-	U3CNyalakanU3Ed__20__ctor_mA4C32E49E45077DF647215D43B7F672CAAD45BA7,
-	U3CNyalakanU3Ed__20_System_IDisposable_Dispose_mDCA627F5D5E5C6AFE4861696D215C2018B59417A,
-	U3CNyalakanU3Ed__20_MoveNext_m2C0CBB86DC4CBAF221DE43C682F6B64BA9857376,
-	U3CNyalakanU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5627DDA2A2674165DA959938AE3418DA77C7E4B6,
-	U3CNyalakanU3Ed__20_System_Collections_IEnumerator_Reset_m9AE5C3653A11EA70EF584161AE6BE7DFB4BA8781,
-	U3CNyalakanU3Ed__20_System_Collections_IEnumerator_get_Current_m02D9C25A7E744F667968E1E3A93C5F13934938DF,
+	U3CNyalakanU3Ed__21__ctor_m598E14B05CD5858BF2F06B8FD4E46F3B38D9955F,
+	U3CNyalakanU3Ed__21_System_IDisposable_Dispose_mDC848DC998833578497CC113A21DE5A155F24EAC,
+	U3CNyalakanU3Ed__21_MoveNext_m22DAAA4D6778298F220BD004AD92CB4119D223F5,
+	U3CNyalakanU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5DCB95CF6F07661B81947D7B1388FC4AD81350B4,
+	U3CNyalakanU3Ed__21_System_Collections_IEnumerator_Reset_mED94865BBF351C75023B6453C6D19031012A5F0F,
+	U3CNyalakanU3Ed__21_System_Collections_IEnumerator_get_Current_mE379FCF6DE78FF6B7D8E3B63933EE702DD901E3B,
 	Kartu_Start_m9986FEF65FD67C6DD7073294881EED380DC5956E,
 	Kartu_OnMouseDown_m207F91E2CA9E00C9C9FEC64FF42F6078EB37E316,
 	Kartu_MunculkanKartu_m07F998A8181CAC31E9782EF30A58EF223A50860E,

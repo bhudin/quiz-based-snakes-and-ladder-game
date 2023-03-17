@@ -48,7 +48,7 @@ public class StoreData : MonoBehaviour
         });*/
     void Update()
     {
-        if (pemain.GetComponent<Jalan>().titikIndex > 24)
+        if (Kontrol.gameOver == true)
         {
             HitungNilaiHuruf();
             UpdateData();

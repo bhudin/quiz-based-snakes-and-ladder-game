@@ -16,6 +16,7 @@ public class Jalan : MonoBehaviour
     [HideInInspector]
     public int titikIndex = 0;
     public int selisih_update;
+    public static int jumlahPetak;
     public AudioClip hore;
     public bool bolehJalan = false, bolehPlay = false, lagiSoal = true;
     public static float time_fixed;
@@ -26,6 +27,7 @@ public class Jalan : MonoBehaviour
     {        
         //GetComponent<AudioSource>().Play();        
         //up = GameObject.Find("storedata");
+        jumlahPetak = titik.Count - 1;
         skor.SetActive(true);
         restart.SetActive(false);
         close.SetActive(false);
@@ -35,12 +37,12 @@ public class Jalan : MonoBehaviour
     private void Update()
     {
         enabled = true;
-        selisih_update = 24 - titikIndex;
+        selisih_update = jumlahPetak - titikIndex;
         if (bolehJalan)
         {
             Gerak();
         }
-        if (titikIndex > 24)
+        if (titikIndex > jumlahPetak)
         {
             Jalan.time_fixed = Kontrol.time;
             bolehPlay = true;
@@ -75,7 +77,7 @@ public class Jalan : MonoBehaviour
 
     private void Gerak()
     {
-        //selisih = 24 - Kontrol.lemparDadu;
+        //selisih = jumlahPetak - Kontrol.lemparDadu;
         if (titikIndex <= titik.Count - 1)
         {
             transform.position = Vector2.MoveTowards(transform.position,
@@ -91,9 +93,9 @@ public class Jalan : MonoBehaviour
         // if (selisih_update - Kontrol.lemparDadu < 0)
         // {
         //     transform.position = Vector2.MoveTowards(transform.position,
-        //     titik[24-selisih_update].transform.position,
+        //     titik[jumlahPetak-selisih_update].transform.position,
         //     moveSpeed * Time.deltaTime);
-        //     if (transform.position == titik[24 - selisih_update].transform.position)
+        //     if (transform.position == titik[jumlahPetak - selisih_update].transform.position)
         //     {
         //         titikIndex -= 1;
         //     }

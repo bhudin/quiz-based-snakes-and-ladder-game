@@ -7,105 +7,116 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="22"
-9-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+9-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="30" />
-10-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+10-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
 11
 12    <uses-feature android:glEsVersion="0x00020000" />
-12-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:3-52
-12-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:17-49
+12-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:3-52
+12-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:17-49
 13
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:3-65
-14-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:20-62
+14-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:3-65
+14-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:20-62
 15
 16    <uses-feature
-16-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:3-88
+16-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:3-88
 17        android:name="android.hardware.touchscreen"
-17-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:17-60
+17-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:17-60
 18        android:required="false" />
-18-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:61-85
+18-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:61-85
 19    <uses-feature
-19-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:3-99
+19-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:3-99
 20        android:name="android.hardware.touchscreen.multitouch"
-20-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:17-71
+20-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:17-71
 21        android:required="false" />
-21-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:72-96
+21-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:72-96
 22    <uses-feature
-22-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:3-108
+22-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:3-108
 23        android:name="android.hardware.touchscreen.multitouch.distinct"
-23-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:17-80
+23-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:17-80
 24        android:required="false" />
-24-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:81-105
+24-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:81-105
 25
 26    <application
-26-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-16:17
+26-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-17:17
 27        android:extractNativeLibs="true"
-27-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+27-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
 28        android:isGame="true" >
-28-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:49-70
+28-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:49-70
 29        <activity
-29-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
+29-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-12:16
 30            android:name="com.unity3d.player.UnityPlayerActivity"
-30-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
+30-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
 31            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-31-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:181-362
+31-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:181-362
 32            android:hardwareAccelerated="false"
-32-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:398-433
+32-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:398-433
 33            android:launchMode="singleTask"
-33-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:149-180
+33-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:149-180
 34            android:resizeableActivity="false"
-34-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:363-397
+34-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:363-397
 35            android:screenOrientation="landscape"
-35-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-148
+35-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-148
 36            android:theme="@style/UnityThemeSelector" >
-36-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
+36-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
 37            <intent-filter>
-37-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-9:23
+37-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-9:23
 38                <action android:name="android.intent.action.MAIN" />
-38-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
-38-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
+38-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+38-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
 39
 40                <category android:name="android.intent.category.LAUNCHER" />
-40-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
-40-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+40-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+40-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
 41                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-41-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:9-78
-41-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:19-75
+41-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:9-78
+41-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:19-75
 42            </intent-filter>
 43
 44            <meta-data
-44-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-82
+44-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-82
 45                android:name="unityplayer.UnityActivity"
-45-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-58
+45-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-58
 46                android:value="true" />
-46-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:59-79
-47        </activity>
-48
-49        <meta-data
-49-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
-50            android:name="unity.splash-mode"
-50-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
-51            android:value="0" />
-51-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
-52        <meta-data
-52-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
-53            android:name="unity.splash-enable"
-53-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
-54            android:value="True" />
-54-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
+46-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:59-79
+47
+48            <layout
+48-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:7-129
+49                android:defaultHeight="1080px"
+49-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:15-45
+50                android:defaultWidth="1920px"
+50-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:46-75
+51                android:minHeight="300px"
+51-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:76-101
+52                android:minWidth="400px" />
+52-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:102-126
+53        </activity>
+54
 55        <meta-data
-55-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
-56            android:name="unity.launch-fullscreen"
-56-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
-57            android:value="True" />
-57-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
+55-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-69
+56            android:name="unity.splash-mode"
+56-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-48
+57            android:value="0" />
+57-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:49-66
 58        <meta-data
-58-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
-59            android:name="unity.allow-resizable-window"
-59-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
-60            android:value="False" />
-60-->D:\Unity\SULTAN\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
-61    </application>
-62
-63</manifest>
+58-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-74
+59            android:name="unity.splash-enable"
+59-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-50
+60            android:value="True" />
+60-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:51-71
+61        <meta-data
+61-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-78
+62            android:name="unity.launch-fullscreen"
+62-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-54
+63            android:value="True" />
+63-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:55-75
+64        <meta-data
+64-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-84
+65            android:name="unity.allow-resizable-window"
+65-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-59
+66            android:value="False" />
+66-->D:\Unity\SULTAN\quiz-based-snakes-and-ladder-game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:60-81
+67    </application>
+68
+69</manifest>

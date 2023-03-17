@@ -19,6 +19,7 @@ public class Dice : MonoBehaviour
     {
         if (!Kontrol.gameOver && coroutineAllowed)
         {
+            countDadu += 1;
             StartCoroutine("RollTheDice");
             GetComponent<AudioSource>().Play();
         }
@@ -32,7 +33,6 @@ public class Dice : MonoBehaviour
     private IEnumerator RollTheDice()
     {
         coroutineAllowed = false;
-        countDadu += 1;
         int randomDiceSide = 0;
         for (int i = 0; i <= 20; i++)
         {
